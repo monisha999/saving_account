@@ -11,6 +11,13 @@ class saving_account():
         print("4.Exit")
         usr_choice=int(input("Enter the choice :"))
         return usr_choice
+		
+    def opt(choice,balance,transaction_no,balance_amt):
+        if choice==1:expense(balance,transaction_no,transaction,balance_amt)
+        if choice==2:income(balance,transaction_no,transaction,balance_amt)
+        if choice==3:statement(transaction,balance_amt)
+        if choice==4:usr_exit()
+	
 
 if __name__=="__main__":
     test=saving_account("firstname","lastname",5000)
